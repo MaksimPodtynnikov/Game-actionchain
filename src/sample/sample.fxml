@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="316.0" prefWidth="378.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox prefHeight="316.0" prefWidth="378.0">
+         <children>
+            <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="41.0" prefWidth="378.0">
+               <children>
+                  <Button fx:id="addMoney" disable="true" mnemonicParsing="false" onAction="#onPay" text="Внести монетку" />
+                  <Label text=" Имя" />
+                  <TextField fx:id="name" prefHeight="25.0" prefWidth="127.0" />
+                  <Button mnemonicParsing="false" onAction="#createPlayer" text="вход" />
+               </children>
+            </FlowPane>
+            <ImageView fx:id="view" fitHeight="172.0" fitWidth="218.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../мешочек.png" />
+               </image></ImageView>
+            <Label text="Счет" />
+            <TextField fx:id="money" editable="false" />
+         </children></VBox>
+   </children>
+</Pane>
